@@ -1,0 +1,495 @@
+/* universal style */
+
+html {
+  width: 100%;
+  margin: 0;
+}
+body {
+  font-size: 14px;
+  font-family: roboto;
+  width: 100%;
+  color: #555555;
+  margin: 0;
+}
+h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+img {
+  display: inline-block;
+}
+p {
+  font-weight: 100;
+  color: gray;
+}
+/* header */
+
+header {
+  height: 64px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+header .hleft img {
+  height: 32px;
+}
+.hleft, .hright {
+  padding: 0 24px;
+}
+.colmar {
+  padding: 2px;
+  font-weight: bolder;
+}
+.academy {
+  color: #858585;
+}
+.hleft {
+  display: inline-flex;
+  align-items: center;
+  font-size: 22px;
+}
+.hright {
+  font-size: 1.05rem;
+
+}
+.online {
+  padding: 0 16px;
+}
+.comp {
+  padding-right: 16px;
+}
+
+/* main content */
+
+/* learn section */
+.learn {
+
+  background-color: #CFCFCF;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 32px;
+
+}
+.learn .left img {
+  max-width: 100%;
+  padding-top: 32px ;
+
+}
+.learn .left {
+  width: 60%;
+  padding-left: 24px;
+}
+.learn .right {
+  width: 40%;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.learn .right .start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555555;
+  color: white;
+  padding: 8px 0;
+  width: 100%;
+}
+.start a {
+  color: white;
+}
+.right h1, h3 {
+  width: 100%;
+  margin: 0 0 24px 0;
+}
+.right h3 {
+}
+.right2 {
+  width: 75%;
+}
+#aboutme {
+  color: white;
+}
+/* practice section */
+
+.practice {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 100%;
+
+}
+.practice .left {
+  width: 60%;
+  padding-top: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.practice .left img {
+  width: 100%;
+  margin: 0;
+}
+.practice .left h1 {
+  margin:32px 0 24px 0;
+}
+.practice .left p {
+  margin: 0 0 32px 0;
+}
+.practice .right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #EFEFEF;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+.right img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+.orien, .campus, .guest {
+  display: inline-flex;
+  align-items: center;
+}
+.orien {
+  border-bottom: 4px solid #EFEFEF;
+}
+.guest {
+  background-color: #CFCFCF;
+}
+.details {
+  width: 65%;
+}
+.practice .right p {
+  padding-top: 8px;
+  margin: 0;
+}
+.practice .right h3 {
+  margin: 0;
+}
+.orien img:first-child {
+  display: none;
+}
+.campus img:first-child {
+  display: none;
+}
+.guest img:first-child {
+  display: none;
+}
+/* start learning */
+.start ul {
+  display: none;
+}
+.start {
+  background-color: #EFEFEF;
+  padding: 32px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row1, .row2 {
+  display: inline-flex;
+  flex-flow: row;
+  width: 100%;
+}
+.row1 {
+  margin: 0;
+}
+.block {
+  width: 100%;
+  background-color: white;
+  margin: 16px;
+}
+.block img {
+  width: 100%;
+  height: auto;
+}
+.start h2 {
+  margin: 0;
+  padding-bottom: 16px;
+}
+.block h3 {
+  margin: 16px;
+}
+.block p {
+  margin: 8px 16px 16px 16px;
+}
+/* Thesis Section */
+.thesis {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thesis .content{
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0 24px 20px 24px;
+}
+.content .left {
+  padding-right: 24px;
+}
+video {
+  width: 100%;
+}
+.thesis .left {
+  width: 60%;
+}
+.thesis .right {
+  width: 40%;
+}
+.fisma {
+  background-color: #CFCFCF;
+}
+.fisma, .now {
+  display: inline-flex;
+  flex-direction: row;
+}
+.thesis img {
+  width: 35%;
+  height: 35%;
+}
+.fisma, .now {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+/* Footer */
+footer {
+  width: 100%;
+  height: 60px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #EFEFEF;
+  font-size: .75rem;
+}
+footer p {
+  margin: 16px 24px;
+}
+ /* media queries */
+@media only screen and (max-width: 1410px) {
+  .guest img {
+    padding-bottom: 0;
+  }
+}
+
+ @media only screen and (max-width: 1219px) {
+   body {
+     font-size: 12px;
+   }
+   .practice h1, .practice h2, .practice h3 {
+     font-size: 1.25rem;
+   }
+ }
+ @media only screen and (max-width: 768px){
+   .practice .left h2 {
+     margin: 18px 0 12px 0;
+   }
+  .practice .left p {
+    margin-bottom: 12px;
+  }
+  .learn .right {
+    padding-top: 32px;
+  }
+}
+@media only screen and (max-width: 675px) {
+  .hright span {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .hright span {
+    font-size: 12px;
+  }
+  .online, .comp {
+    padding: 5px;
+  }
+  .hleft {
+    padding: 0 0 0 16px;
+  }
+  .start {
+    padding-bottom: 12px;
+    background-color: white;
+    border: 1px #EFEFEF solid;
+  }
+  .start span {
+    display: none;
+  }
+  .start ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+  }
+  .start ul li {
+    margin-bottom: 8px;
+    background-color: #CFCFCF;
+    padding: 16px;
+  }
+  li h3 {
+    margin: 0;
+  }
+  .thesis .content .right img{
+    display: none;
+  }
+  .fisma .details, .now .details {
+    padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .practice .right img {
+    display: none;
+  }
+  .details {
+    padding: 16px;
+  }
+
+  .thesis .content .right {
+    display: none;
+  }
+  .thesis .left {
+    width: 100%;
+    padding: 0;
+  }
+  .thesis .content {
+    padding: 0;
+  }
+  .thesis .content .left p {
+    display: none;
+  }
+  .thesis .content .left h3 {
+    display: none;
+  }
+  video {
+    padding-bottom: 24px;
+  }
+  footer {
+    border: 0;
+  }
+}
+
+@media only screen and (min-width: 525px) {
+  .hright img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 524px) {
+  .hright span {
+    display: none;
+  }
+  .hright img {
+    padding: 0 16px;
+  }
+  .hright img:first-child {
+    display: none
+  }
+}
+@media only screen and (max-width: 475px) {
+  .hright img {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  header .hleft span{
+    display: none;
+  }
+  header{
+    justify-content: space-around;
+  }
+  .hleft {
+    display: none;
+  }
+  .hright img:first-child {
+    display: inline-flex;
+  }
+  .hright {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .learn {
+    flex-direction: column;
+  }
+  .learn .left, .learn .right {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+  }
+  .learn .left img {
+    padding: 0;
+  }
+  .right2 {
+    padding: 0 16px;
+    width: auto;
+  }
+  .right2 h1 {
+    margin: 32px 0;
+  }
+  .practice .left {
+    display: none;
+  }
+  .practice .right {
+    width: 100%;
+  }
+  .orien, .campus, .guest {
+    flex-direction: column;
+    padding: 0 16px 64px 16px;
+    border: none;
+    align-items: flex-start;
+  }
+  .details {
+    align-items: flex-start;
+  }
+  .orien img:nth-child(2n+0) {
+    display: none;
+  }
+  .orien img:first-child {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .campus img:nth-child(2n+0) {
+    display: none;
+  }
+  .campus img:first-child {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .guest img:nth-child(2n+0) {
+    display: none;
+  }
+  .guest img:first-child {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .guest {
+    background-color: inherit;
+    padding-bottom: 0;
+  }
+  .details h3 {
+    padding: 16px 16px 0 16px;
+  }
+  .details p {
+    padding: 0 16px;
+  }
+}
