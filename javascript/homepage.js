@@ -34,7 +34,7 @@ function scrollFunction() {
   } else {
     document.getElementById("topFunction").style.display = "none";
   }
-}
+};
 
 // about me button scroll to about me section //
 
@@ -43,4 +43,8 @@ function scrollFunction() {
        scrollTop: $("#practice").offset().top
     });
   });
+
+
+
+
 });
