@@ -10,44 +10,37 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
     <link href="resources/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
       <span class="hleft">
-        <img src="capstone_colmar_assets/images/ic-logo.svg" alt="Colmar Logo">
-        <span class="colmar">Colmar</span><span class="academy">Academy</span>
       </span>
       <span class="hright">
         <img src="capstone_colmar_assets/images/ic-logo.svg" alt="logo">
         <img src="capstone_colmar_assets/images/ic-on-campus.svg" alt="campus">
         <img src="capstone_colmar_assets/images/ic-online.svg" alt="online">
         <img src="capstone_colmar_assets/images/ic-login.svg" alt="login">
-        <span>On campus</a></a></span>
-        <span class="online">Online</span>
-        <span class="comp">or companies</span>
-        <span>Sign in</span>
+        <span><a id="resume" target="_blank" href="resources/Resume-Final.pdf" download>Resume</a></a></a></span>
+        <span class="comp" data-toggle="modal" data-target="#exampleModal"><a id="contact" href="#">Contact Me!</a></span>
       </span>
     </header>
 
 <!-- Main Content -->
 
 <!-- Learn something new everyday -->
-
-    <div class="learn">
-      <span class="left">
-        <img src="resources/images/port logo.jpg" alt="Logo">
-      </span>
-      <span class="right">
-        <span class="right2">
-          <h1>Hello! Welcome to my website!</h1>
-          <h3> My name is Evan, and this is my portfolio website! On this page, you will find what I've created, what I've accomplished,
-            and what I am currently working on. Feel free to explore!
-          </h3>
-          <a id="aboutme" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">About Me</a>
-        </span>
-      </span>
+    <div class="jumbotron text-center m-0" >
+      <h1 class="display-4">Hello! Welcome to my web page!</h1>
+      <p class="lead">My name is Evan, and this is my online portfolio. Here, you will find what I've created, what I've accomplished,
+        and what I am currently working on. Feel free to explore!</p>
+      <hr class="my-4">
+      <p>If you'd like to know more about me, just click the button! Don't care? Click the other button!</p>
+      <a id="aboutme" class="btn btn-primary btn-lg " href="#" role="button">Learn more</a>
+      <a id="gostart" class="btn btn-primary btn-lg " href="#" role="button">My Projects</a>
     </div>
+
 
 <!-- It doesn't hurt to keep practicing -->
 <!-- About Me section -->
@@ -55,83 +48,145 @@
       <span class="left">
         <img src="resources/images/about-me-pic.jpg" alt="Student studying">
         <h2>A little about myself</h1>
-        <p>I am awesome at stuff and I will do awesome stuff for money by people willing to pay me money to
-          do awesome stuff.</p>
-        <p>"This guy is the shit" -Bill Nye the Science Guy</p>
+        <p>I come from the small town of Toronto, OH. You've probably never heard of it. It's close to Steubenville, OH, but you've
+            probably never heard of that either. I graduated from Mount Vernon Nazarene University
+            in 2016 with a Bachelor of Arts in Psychology. Fast forward to today, and I am currently freelancing as
+            a web developer in hopes to gain the experience needed for position with a design company. I enjoy outdoor adventures like hiking and kayaking with my wife, Kristen
+          , and I have a passion for physical fitness. I like to play as hard as I work, and visa versa.</p>
+
       </span>
       <span class="right">
+        <h1>Skills</h1>
         <span class="orien">
-          <img src="capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="">
-          <img src="capstone_colmar_assets/images/information-orientation.jpg" alt="Campus path">
           <span class="details">
-            <h3>Orientation date</h3>
-            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <p><a href="#">Read more</a></p>
+            <h3>HTML5</h3>
           </span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" id="progressbar" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100" style="width:0%">
+
+            </div>
+          </div>
         </span>
         <span class="campus">
-          <img src="capstone_colmar_assets/images/information-campus-mobile.jpg" alt="">
-          <img src="capstone_colmar_assets/images/information-campus.jpg" alt="Classroom">
           <span class="details">
-            <h3>Our campus</h3>
-            <p>Find which campus is close by you</p>
-            <p><a href="#">Read more</a></p>
+            <h3>CSS3</h3>
           </span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" id="progressbar1" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100" style="width:0%">
+
+            </div>
+          </div>
         </span>
         <span class="guest">
-          <img src="capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="">
-          <img src="capstone_colmar_assets/images/information-guest-lecture.jpg" alt="Oliver Sack">
           <span class="details">
-            <h3>Our guest lecture</h3>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <p><a href="#">Read more</a></p>
+            <h3>JavaScript</h3>
           </span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" id="progressbar2" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100" style="width:0%">
+
+            </div>
+          </div>
+        </span>
+        <span class="guest">
+          <span class="details">
+            <h3>jQuery</h3>
+          </span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" id="progressbar3" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100" style="width:0%">
+
+            </div>
+          </div>
+        </span>
+        <span class="guest">
+          <span class="details">
+            <h3>Git</h3>
+          </span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" id="progressbar4" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100" style="width:0%">
+
+            </div>
+          </div>
+        </span>
+        <span class="guest">
+          <span class="details">
+            <h3>Command Line</h3>
+          </span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" id="progressbar5" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100" style="width:0%">
+
+            </div>
+          </div>
+        </span>
+        <span class="guest">
+          <span class="details">
+            <h3>SQL</h3>
+          </span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" id="progressbar6" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100" style="width:0%">
+
+            </div>
+          </div>
+        </span>
+        <span class="guest">
+          <span class="details">
+            <h3>C++</h3>
+          </span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" id="progressbar7" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>
+          </div>
+        </span>
+        <span class="pics">
+          <a target="_blank" href="resources/intensive-credential.pdf" download><img src="resources/images/credential.jpg" alt=""></a>
+          <a target="_blank" href="resources/intensive-credential.pdf"><h3>Codecademy Intensive Credential</h3></a>
         </span>
       </span>
     </div>
 
 <!-- Start Learning -->
 
-    <div class="start">
-      <h2>Start learning</h2>
+    <div id="start" class="start">
+      <h2>Previous Projects</h2>
       <span class="row1">
         <span class="block">
-          <img src="capstone_colmar_assets/images/course-software.jpg" alt="">
-          <h3>Software engineering</h3>
-          <p>COURSES</p>
-          <p>Web Development, Mobile Development, iOT, APIs</p>
+          <a target="_blank" href="https://johnsonec16.github.io/Capstone/"><img src="resources/images/capston.jpg" alt=""></a>
+          <h3>Capstone Project</h3>
+          <p>This webpage was my final project during my online intensive course, and relied heavily on flex elements and media queries.</p>
         </span>
         <span class="block">
-          <img src="capstone_colmar_assets/images/course-computer-art.jpg" alt="">
-          <h3>Computer art</h3>
-          <p>COURSES</p>
-          <p>Imaging & Design, Web Design, Motion Graphics & Visial Effects, Computer Animation</p>
+          <a target="_blank" href="https://johnsonec16.github.io/TeaCozy/"><img src="resources/images/tea-cozy.jpg" alt=""></a>
+          <h3>TeaCozy</h3>
+          <p>This webpage utlized element positioning, such as relative and fixed positions.</p>
         </span>
         <span class="block">
-          <img src="capstone_colmar_assets/images/course-design.jpg" alt="">
-          <h3>Design</h3>
-          <p>COURSES</p>
-          <p>User Experience Design, User Research, Visual Design</p>
+          <a target="_blank" href="https://johnsonec16.github.io/broadway/"><img src="resources/images/broadway.jpg" alt=""></a>
+          <h3>Broadway</h3>
+          <p>This webpage was built to practice image positioning and navigation organization.</p>
         </span>
       </span>
       <span class="row2">
         <span class="block">
-          <img src="capstone_colmar_assets/images/course-data.jpg" alt="">
-          <h3>Data</h3>
-          <p>COURSES</p>
-          <p>Data Science, Big Data, SQL, Data Visualization</p>
+          <a target="_blank" href="https://johnsonec16.github.io/excursion/"><img src="resources/images/excursion.jpg" alt=""></a>
+          <h3>Excursion App Preview</h3>
+          <p>This webpage introduced embedded media elements and video loops.</p>
         </span>
         <span class="block">
-          <img src="capstone_colmar_assets/images/course-business.jpg" alt="">
-          <h3>Business</h3>
-          <p>COURSES</p>
-          <p>Product Development, Business Development, Startup</p>
+          <a target="_blank" href="pages/card-game/cardindex.html"><img src="resources/images/cardgame.jpg" alt=""></a>
+          <h3>Card Matching Game</h3>
+          <p>This game is not yet ready, but it will be soon! This project uses a lot of jQuery functionality. Check back later for updates!</p>
         </span>
         <span class="block">
-          <img src="capstone_colmar_assets/images/course-marketing.jpg" alt="">
-          <h3>Marketing</h3>
-          <p>COURSES</p>
-          <p>Analytics, Content Marketing, Mobile Marketing</p>
+          <a target="_blank" href="resources/images/CBB.jpg"><img src="resources/images/CBB.jpg" alt=""></a>
+          <h3>Country Bargain Bin</h3>
+          <p>This is a shopify page that I am currently running. The Website should be up shortly but this image is a sample of what it will look like!</p>
         </span>
       </span>
       <ul>
@@ -146,41 +201,42 @@
 
 <!-- Thesis Exhibit -->
 
-    <div class="thesis">
-      <h2>Thesis exhibit</h2>
-      <span class="content">
-        <span class="left">
-          <video controls autoplay src="capstone_colmar_assets/videos/thesis.mp4" autoplay poster="">
-          </video>
-          <h3>Reimagine urban</h3>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo
-          lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat
-          ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-        </span>
-        <span class="right">
-          <span class="fisma">
-            <img src="capstone_colmar_assets/images/thesis-fisma.jpg" alt="">
-            <span class="details">
-              <h3>Fisma: Design and Prototype</h3>
-              <p>Designer showcase of new prototype product</p>
-            </span>
-          </span>
-          <span class="now">
-            <img src="capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="">
-            <span class="details">
-              <h3>Now and then</h3>
-              <p>Research study about New York</p>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
+
 
 <!-- Footer -->
     <button id="topFunction" type="button" class="btn btn-secondary btn-lg" style="position: fixed; bottom: 20px; right: 20px; display: none">Top</button>
     <footer>
-      <p>©2016 Colmar Academy. All right reserved</p>
-      <p>Terms Privacy</p>
+      <span id="email" style="font-size: 2rem;">
+        <i class="fas fa-envelope"></i>
+      </span>
+      <span id="link" style="font-size: 2rem;">
+        <i class="fab fa-linkedin"></i>
+      </span>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Contact Me!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><h3>Contact Information</h3></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>Johnsonec16@gmail.com</h5>
+        <h5>linkedin.com/in/evan-johnson-76420bb7</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

@@ -33,8 +33,36 @@ function scrollFunction() {
     document.getElementById("topFunction").style.display = "block";
   } else {
     document.getElementById("topFunction").style.display = "none";
-  }
+  };
+// progress bars animate //
+var offset = $("#practice").offset().top;
+  $window = $(window);
+
+
+  if ($window.scrollTop() >= offset) {
+    $("#progressbar, #progressbar1, #progressbar4, #progressbar5").each(function(){
+     $(this).css({ width: "80%" })
+    });
+    $("#progressbar2, #progressbar3").each(function(){
+    $(this).css({ width: "40%" })
+    });
+    $("#progressbar6, #progressbar7").each(function(){
+    $(this).css({ width: "20%" })
+    });
+  } else {
+    $("#progressbar, #progressbar1, #progressbar4, #progressbar5").each(function(){
+     $(this).css({ width: "0%" })
+    });
+    $("#progressbar2, #progressbar3").each(function(){
+    $(this).css({ width: "0%" })
+    });
+    $("#progressbar6, #progressbar7").each(function(){
+    $(this).css({ width: "0%" })
+    });
+  };
+
 };
+
 
 // about me button scroll to about me section //
 
@@ -43,8 +71,13 @@ function scrollFunction() {
        scrollTop: $("#practice").offset().top
     });
   });
-
-
+// Go straight to projects button //
+  $("#gostart").click(function (){
+    $('html,body').animate({
+       scrollTop: $("#start").offset().top
+    });
+  });
 
 
 });
+document.body.scrollTop > 500 || document.documentElement.scrollTop > 500
