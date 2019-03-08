@@ -320,9 +320,11 @@ footer p {
 }
 #email {
   padding-right: 12px;
+  cursor: pointer;
 }
 #link {
   padding-right: 48px;
+  cursor: pointer;
 }
  /* media queries */
 
