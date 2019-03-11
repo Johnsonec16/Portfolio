@@ -216,13 +216,16 @@ header .hleft img {
   padding: 40px 0;
 }
 .pics img {
-  width: 266.41px;
-  height: 213.39px;
+  width: 100%;
+  /*266.41px*/
+  height: auto;
+  /*213.39px*/
   padding: 0;
 }
 .pics a {
   color: #555555;
   padding-right: 20px;
+  width: 50%;
 }
 /* start learning */
 .start ul {
@@ -263,7 +266,12 @@ header .hleft img {
 .block p {
   margin: 8px 16px 16px 16px;
 }
-
+#row1m, #row2m, #row3m {
+  display: none;
+}
+.colm {
+  display: none;
+}
 /* Thesis Section */
 .thesis {
   display: inline-flex;
@@ -326,6 +334,7 @@ footer p {
   padding-right: 48px;
   cursor: pointer;
 }
+
  /* media queries */
 
  @media only screen and (max-width: 1219px) {
@@ -334,6 +343,14 @@ footer p {
    }
    .practice h1, .practice h2, .practice h3 {
      font-size: 1.25rem;
+   }
+ }
+ @media only screen and (max-width: 1020px) {
+   .details h3 {
+     font-size: 12px;
+   }
+   .orien, .guest, .campus {
+     padding-bottom: 8px;
    }
  }
  @media only screen and (max-width: 768px){
@@ -346,189 +363,98 @@ footer p {
   .learn .right {
     padding-top: 32px;
   }
-}
-@media only screen and (max-width: 675px) {
-  .hright span {
-    font-size: 14px;
+  #CID {
+    font-size: 16px;
   }
-}
-@media only screen and (max-width: 620px) {
-  .hright span {
-    font-size: 12px;
-  }
-  .online, .comp {
-    padding: 5px;
-  }
-  .hleft {
-    padding: 0 0 0 16px;
-  }
-  .start {
-    padding-bottom: 12px;
-    background-color: white;
-    border: 1px #EFEFEF solid;
-  }
-  .start span {
+  .row1, .row2 {
     display: none;
   }
-  .start ul {
-    display: block;
-    list-style: none;
-    padding: 0;
-  }
-  .start ul li {
-    margin-bottom: 8px;
-    background-color: #CFCFCF;
-    padding: 16px;
-  }
-  li h3 {
-    margin: 0;
-  }
-  .thesis .content .right img{
-    display: none;
-  }
-  .fisma .details, .now .details {
-    padding: 16px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .practice .right img {
-    display: none;
-  }
-  .details {
-    padding: 16px;
-  }
-
-  .thesis .content .right {
-    display: none;
-  }
-  .thesis .left {
-    width: 100%;
-    padding: 0;
-  }
-  .thesis .content {
-    padding: 0;
-  }
-  .thesis .content .left p {
-    display: none;
-  }
-  .thesis .content .left h3 {
-    display: none;
-  }
-  video {
-    padding-bottom: 24px;
-  }
-  footer {
-    border: 0;
-  }
-}
-
-@media only screen and (min-width: 525px) {
-  .hright img {
-    display: none;
-  }
-}
-@media only screen and (max-width: 524px) {
-  .hright span {
-    display: none;
-  }
-  .hright img {
-    padding: 0 16px;
-  }
-  .hright img:first-child {
-    display: none
-  }
-}
-@media only screen and (max-width: 475px) {
-  .hright img {
-    padding: 0 10px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  header .hleft span{
-    display: none;
-  }
-  header{
-    justify-content: space-around;
-  }
-  .hleft {
-    display: none;
-  }
-  .hright img:first-child {
+  #row1m, #row2m, #row3m {
     display: inline-flex;
-  }
-  .hright {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-flow: row;
     width: 100%;
   }
-  .learn {
+}
+@media only screen and (max-width: 768px) {
+  header .hleft {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .comp {
+    padding: 0;
+  }
+  #contact {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .practice {
     flex-direction: column;
-  }
-  .learn .left, .learn .right {
-    width: 100%;
     padding: 0;
     margin: 0;
-    align-items: flex-start;
-  }
-  .learn .left img {
-    padding: 0;
-  }
-  .right2 {
-    padding: 0 16px;
-    width: auto;
-  }
-  .right2 h1 {
-    margin: 32px 0;
   }
   .practice .left {
-    display: none;
+    width: 100%;
   }
   .practice .right {
     width: 100%;
+    padding: 16px 24px;
+    text-align: center;
   }
-  .orien, .campus, .guest {
+  #row1m, #row2m, #row3m {
+    display: none;
+  }
+  .start {
+    padding: 0;
+  }
+  .start h2 {
+    padding: 24px 0 8px 0;
+  }
+  .colm {
+    display: flex;
+    width: 100%;
+    justify-content: center;
     flex-direction: column;
-    padding: 0 16px 64px 16px;
-    border: none;
-    align-items: flex-start;
+    margin: 0;
+    padding: 16px 24px;
+  }
+  .colm .block {
+    margin: 0 0 16px 0;
   }
   .details {
-    align-items: flex-start;
+    padding-right: 8px;
   }
-  .orien img:nth-child(2n+0) {
-    display: none;
+  .orien, .campus, .guest {
+    padding: 12px 0;
   }
-  .orien img:first-child {
-    display: block;
-    width: 100%;
-    padding: 0;
+  .pics {
+    flex-direction: column;
   }
-  .campus img:nth-child(2n+0) {
-    display: none;
+  .pics a {
+    width: 70%;
+    padding-bottom: 16px;
   }
-  .campus img:first-child {
-    display: block;
-    width: 100%;
-    padding: 0;
+  #link {
+    padding-right: 12px;
   }
-  .guest img:nth-child(2n+0) {
-    display: none;
+}
+@media only screen and (max-width: 375px) {
+  footer {
+    justify-content: flex-start;
   }
-  .guest img:first-child {
-    display: block;
-    width: 100%;
-    padding: 0;
+  #email {
+    padding-left: 24px;
   }
-  .guest {
-    background-color: inherit;
-    padding-bottom: 0;
+  #contactbutton {
+    margin-left: 24px;
   }
-  .details h3 {
-    padding: 16px 16px 0 16px;
-  }
-  .details p {
-    padding: 0 16px;
+}
+@media only screen and (max-width: 320px) {
+  #contactbutton {
+    margin: 0;
   }
 }

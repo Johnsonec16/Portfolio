@@ -19,10 +19,6 @@
       <span class="hleft">
       </span>
       <span class="hright">
-        <img src="capstone_colmar_assets/images/ic-logo.svg" alt="logo">
-        <img src="capstone_colmar_assets/images/ic-on-campus.svg" alt="campus">
-        <img src="capstone_colmar_assets/images/ic-online.svg" alt="online">
-        <img src="capstone_colmar_assets/images/ic-login.svg" alt="login">
         <span><a id="resume" target="_blank" href="resources/Resume-Final.pdf" download>Resume</a></a></a></span>
         <span class="comp" data-toggle="modal" data-target="#exampleModal"><a id="contact" href="#">Contact Me!</a></span>
       </span>
@@ -145,12 +141,12 @@
         </span>
         <span class="pics">
           <a target="_blank" href="resources/intensive-credential.pdf" download><img src="resources/images/credential.jpg" alt=""></a>
-          <a target="_blank" href="resources/intensive-credential.pdf"><h3>Codecademy Intensive Credential</h3></a>
+          <a target="_blank" href="resources/intensive-credential.pdf"><h3 id="CID">Codecademy Intensive Credential</h3></a>
         </span>
       </span>
     </div>
 
-<!-- Start Learning -->
+<!-- Projects -->
 
     <div id="start" class="start">
       <h2>Projects</h2>
@@ -189,16 +185,86 @@
         </span>
       </span>
       <ul>
-        <li><h3>Software engineering</h3></li>
-        <li><h3>Computer art</h3></li>
+        <li><a target="_blank" href="https://johnsonec16.github.io/Capstone/"><img src="resources/images/capston.jpg" alt="">
+            </a><h3>Capstone Project</h3>
+        </li>
+        <li><h3>TeaCozy</h3></li>
         <li><h3>Design</h3></li>
         <li><h3>Data</h3></li>
         <li><h3>Business</h3></li>
         <li><h3>Marketing</h3></li>
       </ul>
+<!-- mobile config for projects -->
+      <span id="row1m">
+        <span class="block">
+          <a target="_blank" href="https://johnsonec16.github.io/Capstone/"><img src="resources/images/capston.jpg" alt=""></a>
+          <h3>Capstone Project</h3>
+          <p>This webpage was my final project during my online intensive course, and relied heavily on flex elements and media queries.</p>
+        </span>
+        <span class="block">
+          <a target="_blank" href="https://johnsonec16.github.io/TeaCozy/"><img src="resources/images/tea-cozy.jpg" alt=""></a>
+          <h3>TeaCozy</h3>
+          <p>This webpage utlized element positioning, such as relative and fixed positions.</p>
+        </span>
+      </span>
+      <span id="row2m">
+        <span class="block">
+          <a target="_blank" href="https://johnsonec16.github.io/broadway/"><img src="resources/images/broadway.jpg" alt=""></a>
+          <h3>Broadway</h3>
+          <p>This webpage was built to practice image positioning and navigation organization.</p>
+        </span>
+        <span class="block">
+          <a target="_blank" href="https://johnsonec16.github.io/excursion/"><img src="resources/images/excursion.jpg" alt=""></a>
+          <h3>Excursion App Preview</h3>
+          <p>This webpage introduced embedded media elements and video loops.</p>
+        </span>
+      </span>
+      <span id="row3m">
+        <span class="block">
+          <a target="_blank" href="pages/card-game/cardindex.html"><img src="resources/images/cardgame.jpg" alt=""></a>
+          <h3>Card Matching Game</h3>
+          <p>This game is not yet ready, but it will be soon! This project uses a lot of jQuery functionality. Check back later for updates!</p>
+        </span>
+        <span class="block">
+          <a target="_blank" href="resources/images/CBB.jpg"><img src="resources/images/CBB.jpg" alt=""></a>
+          <h3>Country Bargain Bin</h3>
+          <p>This is a shopify page that I am currently running. The Website should be up shortly but this image is a sample of what it will look like!</p>
+        </span>
+      </span>
+<!-- screen width 425px all projects in single column no rows -->
+      <span class="colm">
+        <span class="block">
+          <a target="_blank" href="https://johnsonec16.github.io/Capstone/"><img src="resources/images/capston.jpg" alt=""></a>
+          <h3>Capstone Project</h3>
+          <p>This webpage was my final project during my online intensive course, and relied heavily on flex elements and media queries.</p>
+        </span>
+        <span class="block">
+          <a target="_blank" href="https://johnsonec16.github.io/TeaCozy/"><img src="resources/images/tea-cozy.jpg" alt=""></a>
+          <h3>TeaCozy</h3>
+          <p>This webpage utlized element positioning, such as relative and fixed positions.</p>
+        </span>
+        <span class="block">
+          <a target="_blank" href="https://johnsonec16.github.io/broadway/"><img src="resources/images/broadway.jpg" alt=""></a>
+          <h3>Broadway</h3>
+          <p>This webpage was built to practice image positioning and navigation organization.</p>
+        </span>
+        <span class="block">
+          <a target="_blank" href="https://johnsonec16.github.io/excursion/"><img src="resources/images/excursion.jpg" alt=""></a>
+          <h3>Excursion App Preview</h3>
+          <p>This webpage introduced embedded media elements and video loops.</p>
+        </span>
+        <span class="block">
+          <a target="_blank" href="pages/card-game/cardindex.html"><img src="resources/images/cardgame.jpg" alt=""></a>
+          <h3>Card Matching Game</h3>
+          <p>This game is not yet ready, but it will be soon! This project uses a lot of jQuery functionality. Check back later for updates!</p>
+        </span>
+        <span class="block">
+          <a target="_blank" href="resources/images/CBB.jpg"><img src="resources/images/CBB.jpg" alt=""></a>
+          <h3>Country Bargain Bin</h3>
+          <p>This is a shopify page that I am currently running. The Website will be up shortly but this image is a sample of what it will look like!</p>
+        </span>
+      </span>
     </div>
-
-<!-- Thesis Exhibit -->
 
 
 
@@ -212,7 +278,7 @@
         <i class="fab fa-linkedin"></i>
       </span>
       <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button id="contactbutton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Contact Me!
 </button>
 
